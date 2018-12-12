@@ -1,0 +1,26 @@
+.contDatosTiempo{
+    margin: 0 auto;
+    width: 30%;
+    height: auto;
+    background-color: lightgray;
+    padding: 20px;    
+}
+
+.contExtraInfo{
+    display: block;
+    width: 100%;
+    color: black;
+}
+
+.contTemperaturaTiempo{
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+    color: darkorange;
+}
+.temperatura{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10px;
+    color: black;   
+}
