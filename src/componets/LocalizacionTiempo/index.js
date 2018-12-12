@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import { PropTypes } from 'prop-types';
 import Localizacion from './Localizacion';
 import DatosTiempo from './DatosTiempo';
 import transformarTiempo from './../../services/transformarTiempo';
-import { api_tiempo } from './../../constants/api_url';
+import getUrlTiempoCiudad from './../../services/getUrlTiempoCiudad';
 
 import './style.css';
 
 class LocalizacionTiempo extends Component {
 
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
+        const { city } = props;
         this.state = {
-            city: 'Puerto de Sagunto',
+            city,
             data: null,
         };
     }
@@ -26,7 +28,7 @@ class LocalizacionTiempo extends Component {
 
     updateClick = () => {
 
-        fetch(api_tiempo).then(
+        fetch( getUrlTiempoCiudad(this.state.city) ).then(
             resolve => {
                 return resolve.json();
             }
@@ -51,4 +53,7 @@ class LocalizacionTiempo extends Component {
     }
 }
 
+LocalizacionTiempo.propTypes = {
+    city: PropTypes.string.isRequired,
+}
 export default LocalizacionTiempo;

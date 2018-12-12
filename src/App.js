@@ -8,8 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         Aplicacion del clima
-          <LocalizacionTiempo></LocalizacionTiempo>
-          
+          <LocalizacionTiempo city="Soria,es"></LocalizacionTiempo>         
       </div>
     );
   }
