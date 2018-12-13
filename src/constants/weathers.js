@@ -1,7 +1,6 @@
 export const SOL = "day-sunny";
-export const NIEBLA = "day-fog";
+export const TORMENTA = "thunder";
 export const NUBE = "cloud";
-export const NUBLADO = "cloudy";
 export const LLUVIA = "rain";
 export const NIEVE = "snow";
-export const VIENTO = "windy";
+export const LLOVIZNA = "drizzle";

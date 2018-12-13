@@ -4,22 +4,20 @@ import PropTypes from 'prop-types';
 
 import {
     SOL,
-    NIEBLA,
     NUBE,
-    NUBLADO,
     LLUVIA,
     NIEVE,
-    VIENTO,
+    TORMENTA,
+    LLOVIZNA,
 } from './../../../constants/weathers';
 
 const icons = {
     [SOL] : "day-sunny",
-    [NIEBLA] : "day-fog",
     [NUBE] : "cloud",
-    [NUBLADO] : "cloudy",
     [LLUVIA] : "rain",
     [NIEVE] : "snow",
-    [VIENTO] : "windy",
+    [TORMENTA] : "day-thunderstore",
+    [LLOVIZNA] : "day-drizzle",
 };
 
 const getWeatherIcon = estadoTiempo => {
