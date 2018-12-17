@@ -5,10 +5,9 @@ import LocalizacionLista from './componets/LocalizacionLista';
 
 const ciudades = [
   "Madrid,es",
-  "Valencia,es",
   "Teruel,es",
   "Washington,us",
-  "Lima,pe",
+  "Valencia,es",
 ];
 
 class App extends Component {

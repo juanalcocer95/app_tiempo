@@ -3,7 +3,7 @@ import LocalizacionTiempo from './LocalizacionTiempo';
 
 const strToComponets = ciudades => (
     ciudades.map( city => 
-        <LocalizacionTiempo city={ city } />
+        <LocalizacionTiempo key={ city } city={ city } />
     ));
 
 
